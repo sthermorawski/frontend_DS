@@ -1,0 +1,21 @@
+body {
+    color: #155670;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(17, 86, 114)
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(160, 221, 236);
+    text-align: center;
+    border: 20px;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 10px;
+
+}
