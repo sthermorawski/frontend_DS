@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    font-family: Arial;
+    background-image:url(https://i.pinimg.com/originals/47/e7/66/47e7664216492cc330a8880f17d2ae04.jpg) ;
+  }
+  
+  header{
+    background:#d32f2f;
+    color:rgba(0, 0, 0, 0.979);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    text-align:center;
+    padding:3px;
+    background: #0266d1;
+    background: linear-gradient(90deg,rgba(2, 102, 209, 1) 0%, rgba(0, 161, 224, 1) 25%, rgba(255, 255, 255, 1) 50%, rgba(252, 53, 53, 1) 75%, rgba(219, 0, 0, 1) 100%);
+  }
+  
+  .container{
+    background:white;
+    width: 60%;
+    margin:40px auto;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  input, select{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+  }
+  
+  button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    border-radius:8px;
+    background:#e53935;
+    color:white;
+    font-size:16px;
+  }
+
+
