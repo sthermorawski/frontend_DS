@@ -1,4 +1,4 @@
-/* Configurações Gerais */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,35 +7,38 @@
 }
 
 body {
-    background-color: #c57f17;
-    color: #4a3728;
+    background-color: #f9f6f0;
+    color: #333;
     line-height: 1.6;
 }
 
-/* Menu de Navegação */
 header {
-    background-color: #ffb7b2;
+    background-color: #4a2840; 
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-bottom: 3px solid #d4a5b8;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 24px;
     font-weight: bold;
-    color: #ff6b6b;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #d4a5b8;
 }
 
 .nav-links {
@@ -45,122 +48,123 @@ nav {
 }
 
 .nav-links a {
+    color: #fff;
     text-decoration: none;
-    color: #4a3728;
     font-weight: 600;
     transition: color 0.3s;
 }
 
 .nav-links a:hover, .nav-links a.active {
-    color: #ff6b6b;
+    color: #d4a5b8;
 }
 
-/* Conteúdo Principal */
 main {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-/* Banner da Home */
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-color: #ffdac1;
-    border-radius: 15px;
+    background-color: #eae1d4;
+    border-radius: 10px;
     margin-bottom: 40px;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    color: #ff6b6b;
-    margin-bottom: 10px;
+    font-size: 36px;
+    color: #4a2840;
+    margin-bottom: 15px;
 }
 
-/* Grid do Cardápio */
-.grid-cardapio {
+.hero p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #b05c7d;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #4a2840;
+}
+
+.livros-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-top: 30px;
 }
 
-.card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
+.livro-card {
+    background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+    padding: 20px;
     text-align: center;
-    border-top: 5px solid #e2f0cb;
+    border: 1px solid #eee;
 }
 
-.card h3 {
-    color: #ff6b6b;
+.livro-card h3 {
+    color: #4a2840;
+    margin: 15px 0 10px;
+}
+
+.tag-stem {
+    display: inline-block;
+    background-color: #e8d7e0;
+    color: #4a2840;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-.preco {
-    font-weight: bold;
-    color: #4a3728;
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
+.sobre-container {
 
-/* Página de Contato */
-.contato-container {
     display: flex;
-    flex-wrap: wrap;
     gap: 40px;
-    margin-top: 30px;
-}
-
-.info-contato, .formulario {
-    flex: 1;
-    min-width: 300px;
-    background: white;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
-.form-group {
-    margin-bottom: 20px;
+.sobre-texto {
+    flex: 2;
+    min-width: 300px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 600;
+.sobre-texto h2 {
+    color: #4a2840;
+    margin-bottom: 15px;
 }
 
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.sobre-texto p {
+    margin-bottom: 15px;
+    color: #555;
 }
 
-button {
-    background-color: #ff6b6b;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: #ff4747;
-}
-
-/* Rodapé */
 footer {
-    background-color: #4a3728;
-    color: #fcf8f2;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+    background-color: #4a2840;
+    color: #fff;
     margin-top: 60px;
+    font-size: 14px;
 }
